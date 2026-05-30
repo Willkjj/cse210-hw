@@ -9,5 +9,8 @@
 
         Console.WriteLine(myAngle.GetRadians());
 
+        Angle newAngle = new Angle(200.2);
+        Console.WriteLine(myAngle.GetRadians());
+
     }
 }

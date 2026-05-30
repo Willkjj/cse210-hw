@@ -4,6 +4,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Scripture myScripture = new Scripture( "Ether",12,27, "And if men come unto me I will show unto them their weakness. I give unto men weakness that they may be humble; and my grace is sufficient for all men that humble themselves before me; for if they humble themselves before me, and have faith in me, then will I make weak things become strong unto them.");
+        string userResponse = "";
+        while (userResponse != "quit")
+        {
+            myScripture.DisplayEverything();
+
+            if ( myScripture.HiddenWordsEqualsWords() == true)
+            {
+                return;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Press enter to continue or type 'quit' to finish ");
+
+            userResponse = Console.ReadLine();
+            myScripture.HideThreeWords();
+
+
+        }
     }
 }
