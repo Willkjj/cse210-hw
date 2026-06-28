@@ -9,7 +9,7 @@ class Menu
 
     public void DisplayMenu()
     {
-        while (_parsedUserInput != 4)
+        while (_parsedUserInput != 5)
         {
             Console.Clear();
             Console.WriteLine("Menu Options");
